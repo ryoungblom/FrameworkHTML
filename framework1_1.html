@@ -1,0 +1,1030 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Tap Trust Risk Analysis Framework v. 1.2 (December 2017)</title>
+  </head>
+  <body>
+  
+<h2> Part Three: Risk Analysis Framework </h2>
+
+<i>This framework is divided into the aformentioned sections: Legal Risk, Project Transparency, Governance Structure, and Token Functionality</i>
+
+<br>
+
+<h4> Legal Risk:  </h4>
+
+This section attempts to predict the risk of a token running into legal issues. The most likely scenario is a token violating U.S. securities law, so here, we will be focusing primarily on the <i>Howey</i> test.
+
+<!--- HOWEY TEST --->
+
+<br>
+<!--- Factor 1: Investment of Money--->
+<br>
+
+
+Was there an initial financial investment in new tokens? 
+
+<select id="Legal_Howey_finInvestment">
+  <option value=NULL> </option>
+  <option value=75>Yes (+75)</option>
+  <option value=25>Unknown (+25)</option>
+  <option value=0>No (+0)</option>
+</select>
+
+<br>
+  
+<sub>
+<i>ex: are new tokens bought (financial investment), or mined/given out for free/etc (no financial investment)?</i>
+</sub>
+
+<br>
+<br>
+
+
+
+Is there a risk of losing value after the initial investment?
+
+<select id="Legal_Howey_initInvestment">
+  <option value=NULL> </option>
+  <option value=75>Yes (+75)</option>
+  <option value=25>Unknown (+25)</option>
+  <option value=0>No (+0)</option>
+</select>
+
+<br>
+ 
+<sub>
+<i>ex: Do the tokens provide any **use** within the system?  i.e. allowing access, rights, abilities, etc.? If not, they merely exist.</i>
+</sub>
+
+<br>
+<br>
+
+Was there a sale of coins via an ICO or similar?
+
+<select id="Legal_Howey_preMined">
+  <option value=NULL> </option>
+  <option value=75>Yes, with explicit or implied promises (+75)</option>
+  <option value=50>Yes, with no attached promises (+50) </option>
+  <option value=25>Unknown (+25)</option>
+  <option value=0>No (+0)</option>
+</select>
+
+<br> 
+
+<sub>
+<i>ex: were coins pre-mined by dev team and then sold at an ICO or similar?</i>
+</sub>
+
+<br>
+<!--- Factor 2: In a Common Enterprise --->
+<br>
+
+Was there a sale of tokens to fund a pre-existing product?
+
+<select id="Legal_Howey_preExisting">
+  <option value=NULL> </option>
+  <option value=75>Yes (+75)</option>
+  <option value=50>Unknown (+50)</option>
+  <option value=0>No (+0)</option>
+</select>
+
+<br> 
+
+<sub>
+<i>ex: was there an ICO to develop the project (non-existing), or to fund an existing product (pre-existing)?</i>
+</sub>
+
+<br>
+<br>
+
+After buying the token, does the value of the token depend on the value of the issuing company?
+
+<select id="Legal_Howey_enterpriseVert">
+  <option value=NULL> </option>
+  <option value=75>Yes (+75)</option>
+  <option value=50>Unknown (+50)</option>
+  <option value=0>No (+0)</option>
+</select>
+
+<br>
+  
+<sub>
+<i>ex: if the token is used in a company's proprietary ecosystem, the token is useless of the company goes under</i>
+</sub>
+
+<br>
+<!--- Factor 3: With an expectation of Profit --->
+<br>
+
+Does the token do anything other than merely exist?
+
+<select id="Legal_Howey_profitUtility">
+  <option value=NULL> </option>
+  <option value=75>Yes (+75)</option>
+  <option value=50>Unknown (+50)</option>
+  <option value=0>No (+0)</option>
+</select>
+
+<br>
+  
+<sub>
+<i>ex: Do the tokens provide any <b>use</b> within the system?  i.e. allowing access, rights, abilities, etc.? If not, they merely exist.</i>
+</sub>
+
+<br>
+<!--- Factor 4: from the efforts of a third party --->
+<br>
+
+Was there an expectation of profit predominantly from the efforts of a third party?
+
+<select id="Legal_Howey_efforts3p">
+  <option value=NULL> </option>
+  <option value=75>Yes (+75)</option>
+  <option value=50>Unknown (+50)</option>
+  <option value=0>No (+0)</option>
+</select>
+
+<br>
+  
+<sub>
+<i>ex: is the token going to raise in value primarily due to efforts of a third party (i.e. company marketing, building a working product, etc.)?</i>
+</sub>
+
+
+<!--- Jurisdiction --->
+
+<!---
+What jurisdiction is the token purchaser?
+
+<select id="Legal_Howey_jx">
+  <option value=NULL> </option>
+  <option value=75>USA (+50)</option>
+  <option value=25>Europe (+25)</option>
+  <option value=25> Singapore (+25)</option>
+  <option value=50> South Korea (+50)</option>
+  <option value=60> China (+60)</option>
+  <option value=50>Other (+50)</option>
+</select>
+
+<br>
+  
+<sub>
+<i>ex: is the token going to raise in value primarily due to efforts of a third party (i.e. company marketing, building a working product, etc>)?</i>
+</sub>
+
+--->
+
+<br>
+<br>
+
+<h4> Project Transparency:  </h4>
+
+This section attempts to quantify how transparent a project is. This includes things like providing sufficient contact information, information about the founders/board members, and regular status updates.
+
+<br>
+<!--- Contact Information --->
+<br>
+
+Does the website provide sufficient contact information? 
+
+<select id="Trans_Contact_contactInfo">
+  <option value=NULL> </option>
+  <option value=0>Yes, all expected channels of communication (+0)</option>
+  <option value=50>They have some contact info, but are missing some channels (+50)</option>
+  <option value=150>Contact information sparse or missing (+150)</option>
+</select>
+
+<br>  
+
+<sub>
+<i>ex: At this point, things like a slack/telegram, email, facebook, and twitter are non-optional. Bare mininum ("some contact info") would be an email address and one other channel of communication</i>
+</sub>
+
+<br>
+<br>
+
+Is there a community chat system? 
+
+<select id="Trans_Contact_commChat">
+  <option value=NULL> </option>
+  <option value=0>Yes (+0)</option>
+  <option value=40>No (+40)</option>
+</select>
+
+<br>  
+
+<sub>
+<i>ex: Slack, Telegram, or similar</i>
+</sub>
+
+<br>
+<!--- Information Accessibility --->
+<br>
+
+Does the project state a clear goal and use case for its tokens? 
+
+<select id="Trans_Access_stateGoal">
+  <option value=NULL> </option>
+  <option value=0>Yes (+0)</option>
+  <option value=40>No (+40)</option>
+</select>
+
+<br>  
+
+<sub>
+<i>ex: "We solve X problem" or "We hope to achieve...", as opposed to a company that releases tokens that don't appear to **do** anything.</i>
+</sub>
+
+<br>
+<br>
+
+Is the project open-source and in a repository?
+
+<select id="Trans_Access_openSource">
+  <option value=NULL> </option>
+  <option value=0>Yes (+0)</option>
+  <option value=40>Unknown (+40)</option>
+  <option value=75>No (+75)</option>
+</select>
+
+<br>  
+
+<sub>
+<i>ex: Project code should be in a public gitHub or similar repository, and should be open source.</i>
+</sub>
+
+<br>
+<br>
+
+Is transparent information easiy obtainable from the website?
+
+<select id="Trans_Access_transInfo">
+  <option value=NULL> </option>
+  <option value=0>Yes (+0)</option>
+  <option value=40>Some information, or it's hard to find (+40)</option>
+  <option value=75>No (+75)</option>
+</select>
+
+<br>  
+
+<sub>
+<i>ex: Contact info, 'about' page, team profile, github, etc. should all be in a reasonable place on the website. Information that is present but buried in unintuitive places on the site ought to be questioned.</i>
+</sub>
+
+<br>
+<!--- Team Info --->
+<br>
+
+Is there sufficient information about team members?
+
+<select id="Trans_Access_teamInfo">
+  <option value=NULL> </option>
+  <option value=0>Yes (+0)</option>
+  <option value=40>Somewhat (+40)</option>
+  <option value=75>No (+75)</option>
+</select>
+
+<br>  
+
+<sub>
+<i>ex: Important information includes the identities of key team members, founders, board members, and ought to provide information such as previous projects or a linkedin/other website. Bare minimum would be information about the founders.</i>
+</sub>
+
+<br>
+<br>
+
+Does the core team have experience in a relevant sector?
+
+<select id="Trans_Access_coreExp">
+  <option value=NULL> </option>
+  <option value=0>Yes (+0)</option>
+  <option value=40>Unclear, or hard to find (+40)</option>
+  <option value=75>No (+75)</option>
+</select>
+
+<br>  
+
+<sub>
+<i>ex: Blockchain, CS/tech, marketing, finance, economics, AI, etc. Be wary of teams with members lacking experience.</i>
+</sub>
+
+<br>
+<br>
+
+Is there two of: a development team, a marketing team, an executive team, and an advisory board?
+
+<select id="Trans_Access_coreTeams">
+  <option value=NULL> </option>
+  <option value=0>Yes, all four (+0)</option>
+  <option value=10>Yes, 2-3 (+10)</option>
+  <option value=-25>No, but project is 100% open source (-25)</option>
+  <option value=75>No, one or fewer (+75)</option>
+</select>
+
+<br>  
+
+<sub>
+<i>ex: Solid teams need, at the very least, development and leadership. Complete open-source, decentralized, blockchain-only tokens may only need a dev team .</i>
+</sub>
+
+<br>
+<!--- Timeline --->
+<br>
+
+Are there regularly-provided status updates?
+
+<select id="Trans_Timeline_statUpdates">
+  <option value=NULL> </option>
+  <option value=0>Yes (+0)</option>
+  <option value=45>Present, but sparse (+45)</option>
+  <option value=75>No (+75)</option>
+</select>
+
+<br>  
+
+<sub>
+<i>ex: Team should keep token holder appraised of both good news and bad news. Holders should expect regular status updates—silence is not a good sign.</i>
+</sub>
+
+<br>
+<br>
+
+Is the project meeting benchmarks?
+
+<select id="Trans_Timeline_benchmarks">
+  <option value=NULL> </option>
+  <option value=0>Yes (+0)</option>
+  <option value=40>Usually, but late (+40)</option>
+  <option value=75>No (+75)</option>
+</select>
+
+<br>  
+
+<sub>
+<i>ex: team sets the benchmarks, and should meet them. This includes MVPs and updates, all the way through partnerships and product launches.</i>
+</sub>
+
+<br>
+<br>
+
+<h4> Governance Structure:  </h4>
+
+Here, we look at the structure of the project taken as a whole. The goal here is to make sure that the governance structure is both community-friendly and has mechanism designed to limit the power of the creator(s) or otherwise keep it decentralized.
+
+<br>
+<!--- Issuance --->
+<br>
+
+Is funding released in a controlled manner and measured against benchmarks?
+
+<select id="Gov_Issuance_release">
+  <option value=NULL> </option>
+  <option value=0>Yes (+0)</option>
+  <option value=40>Unknown (+40)</option>
+  <option value=75>No (+75)</option>
+</select>
+
+<br>  
+
+<sub>
+<i>ex: Allocating certain amounts of the funding to specific projects, and only realeasing the next amount of funding when a benchmark is reached.</i>
+</sub>
+
+<br>
+<br>
+
+Were 20%-40% of tokens reserved for the team?
+
+<select id="Gov_Issuance_teamStruct">
+  <option value=NULL> </option>
+  <option value=0>Yes, 20%-40% (+0)</option>
+  <option value=-10>Less than 20% (-10)</option>
+  <option value=75>More than 40% (+75)</option>
+</select>
+
+<br>  
+
+<sub>
+<i>ex: This should include later employees, bug bounties, etc. Ideally, 60+ percent of tokens should be out of the company's control.</i>
+</sub>
+
+<br>
+<br>
+
+Does the project have a decentralized governance structure?
+
+<select id="Gov_Issuance_decentralized">
+  <option value=NULL> </option>
+  <option value=0>Yes (+0)</option>
+  <option value=35>Unknown (+40)</option>
+  <option value=75>No (+75)</option>
+</select>
+
+<br>  
+
+<sub>
+<i>ex: A centralized structure may manifest as a corporation controlling the tokens (and therefor votes), centralized nodes, etc.</i>
+</sub>
+
+<br>
+<!--- Best Practices --->
+<br>
+
+Were ICO finances handled via escrow or smart contract?
+
+<select id="Gov_Issuance_icoFin">
+  <option value=NULL> </option>
+  <option value=0>Yes (+0)</option>
+  <option value=35>Unknown (+35)</option>
+  <option value=75>No (+75)</option>
+</select>
+
+<br>  
+
+<sub>
+<i>ex: Companies should never expect that a tokenholder or ICO participant merely send tokens/money/etc to a personal wallet or similar. Ideally, the funds would be held in some kind of escrow or smart contract, to be released upon benchmarks.</i>
+</sub>
+
+<br>
+<br>
+
+Are there provisions for delayed founder liquidity?
+
+<select id="Gov_Issuance_founderLiq">
+  <option value=NULL> </option>
+  <option value=0>Yes (+0)</option>
+  <option value=35>Unknown (+35)</option>
+  <option value=75>No (+75)</option>
+</select>
+
+<br>  
+
+<sub>
+<i>ex: This ought to encompass anything that similarly prevents the founders/team members from taking the value generated by an ICO or via token sales and simply walking away from the project.</i>
+</sub>
+
+<br>
+<br>
+
+Was between 20%-40% of tokens offered for sale or otherwise issued?
+
+<select id="Gov_Issuance_tokensIssued">
+  <option value=NULL> </option>
+  <option value=0>Yes (+0)</option>
+  <option value=35>Unknown (+35)</option>
+  <option value=75>No (+75)</option>
+</select>
+
+<br>  
+
+<sub>
+<i>ex: The founders/core team should never hold so many tokens that the ecosystem is de facto centralized.</i>
+</sub>
+
+<br>
+<br>
+
+Did the ICO have a funding goal, and ended when the goal was met?
+
+<select id="Gov_Issuance_fundGoal">
+  <option value=NULL> </option>
+  <option value=0>Yes (+0)</option>
+  <option value=35>Unknown (+35)</option>
+  <option value=75>No (+75)</option>
+</select>
+
+<br>  
+
+<sub>
+<i>ex: Ideally, an ICO should end early if their goal is met, as that marks the end of the funds that they had planned for. Continuing past the funding goal shows a willingness to accept investor money with no real plan for what to do with it.</i>
+</sub>
+
+<br>
+<br>
+
+Is there a hard token cap?
+
+<select id="Gov_Issuance_tokenCap">
+  <option value=NULL> </option>
+  <option value=0>Yes (+0)</option>
+  <option value=35>Unknown (+35)</option>
+  <option value=75>No (+75)</option>
+</select>
+
+<br>  
+
+<sub>
+<i>ex: Without a hard token cap, the supply can just keep rising, diluting value while diluting control of the ecosystem.</i>
+</sub> 
+
+<br>
+<br>
+
+<h4>  Token Functionality:  </h4>
+
+The goal here is to determine the general status of the project. How close is the token to being live? Are the benchmarks and goals set by the team reasonable? Will the token likely be around for a while, as it solves a real-world issue?
+
+<br>
+<!---Technical Specifications--->
+<br>
+
+
+Is there a quality, easy-to-find whitepaper?
+
+<select id="Func_TechSpec_whitepaper">
+  <option value=NULL> </option>
+  <option value=0>Yes (+0)</option>
+  <option value=75>No (+75)</option>
+</select>
+
+<br>  
+
+<sub>
+<i>ex: The whitepaper is the blueprint for the project. No whitepaper, a hard-to-find whitepaper, or a shoddy whitepaper ought to raise red flags.</i>
+</sub>
+
+<br>
+<br>
+
+Is the token "live" and being used?
+
+<select id="Func_TechSpec_live">
+  <option value=NULL> </option>
+  <option value=0>Yes (+0)</option>
+  <option value=75>No (+75)</option>
+</select>
+
+<br>  
+
+<sub>
+<i>ex: does the team have a functioning product, or is the product coming sometime in the future?.</i>
+</sub>
+
+<br>
+<br>
+
+Is the token built on a decentralized platform?
+
+<select id="Func_TechSpec_decentralPlatform">
+  <option value=NULL> </option>
+  <option value=0>Yes (+0)</option>
+  <option value=35>Unknown (+35)</option>
+  <option value=75>No (+75)</option>
+</select>
+
+<br>  
+
+<sub>
+<i>ex: Decentralized platforms are less susceptible to manipulation. When the majority of the has power/tokens/other things that have "control" value are in the hands of individuals, the token can be said to be decentralized.</i>
+</sub>
+
+<br>
+<br>
+
+Does the token have utility on the platform?
+
+<select id="Func_TechSpec_utility">
+  <option value=NULL> </option>
+  <option value=0>Yes (+0)</option>
+  <option value=35>Unknown (+35)</option>
+  <option value=75>No (+75)</option>
+</select>
+
+<br>  
+
+<sub>
+<i>ex: Does the token provide a right, provide access, do anything other than exist and/or act as a method of exchange between other currencies?</i>
+</sub>
+
+<br>
+<br>
+
+Is the token necessary for the project or for solving a problem?
+
+<select id="Func_TechSpec_necessary">
+  <option value=NULL> </option>
+  <option value=0>Yes (+0)</option>
+  <option value=35>Unknown (+35)</option>
+  <option value=75>No (+75)</option>
+</select>
+
+<br>  
+
+<sub>
+<i>ex: If the project can exist without the token, the token is more likely to be seen as a security or otherwise regulated. A counterexample is bitcoin—without the token, there is no project.</i>
+</sub>
+
+<br>
+<br>
+<br>
+<input type="submit" value="Submit" id="riskButton">
+<br>
+<br>
+
+<h4><div id = "scores"> </div>
+
+<br>
+
+<div id = "finalTotal">  Overall Score: </div>
+<sub>
+<i>Your average score of all four risk assessment categories.   For testing, will be deleted in later versions</i>
+</sub>
+</h4>
+
+
+<h4>
+<div id = "stringTotal">  </div>
+</h4>
+
+<br>
+<br>
+
+  </body>
+</html>
+
+
+<script>
+
+function calcRisk () {
+
+var riskTotal;
+
+//Legal Variables
+
+
+//investment of money
+var legal_finInvest = document.getElementById ("Legal_Howey_finInvestment");
+var finInvest = legal_finInvest.value;
+finInvest = parseInt(finInvest);
+
+var Legal_initInvestment = document.getElementById ("Legal_Howey_initInvestment");
+var initInvestment = Legal_initInvestment.value;
+initInvestment = parseInt(initInvestment);
+
+var Legal_preMined = document.getElementById ("Legal_Howey_preMined");
+var preMined = Legal_preMined.value;
+preMined = parseInt(preMined);
+
+
+var factor1 = (finInvest + initInvestment + preMined);
+
+if (factor1 >= 75) {
+factor1 = 100;
+}
+
+else if (factor1 <= 25) {
+factor1 = 0;
+}
+
+else {
+factor1 = 50;
+}
+
+
+
+//Common Enterprise
+var legal_preExisting = document.getElementById ("Legal_Howey_preExisting");
+var preExisting = legal_preExisting.value;
+preExisting = parseInt(preExisting);
+
+
+var Legal_enterpriseVert = document.getElementById ("Legal_Howey_enterpriseVert");
+var enterpriseVert = Legal_enterpriseVert.value;
+enterpriseVert = parseInt(enterpriseVert);
+
+var factor2 = (preExisting + enterpriseVert);
+
+if (factor2 >= 75) {
+factor2 = 100;
+}
+
+else if (factor2 <= 25) {
+factor2 = 0;
+}
+
+else {
+factor2 = 50;
+}
+
+//expectation of profit
+var Legal_profitUtility = document.getElementById ("Legal_Howey_profitUtility");
+var profitUtility = Legal_profitUtility.value;
+profitUtility = parseInt(profitUtility);
+
+factor3 = profitUtility;
+
+if (factor3 >= 75) {
+factor3 = 100;
+}
+
+else if (factor3 <= 25) {
+factor3 = 0;
+}
+
+else {
+factor3 = 50;
+}
+
+
+//Third Party
+var Legal_efforts3p = document.getElementById ("Legal_Howey_efforts3p");
+var efforts3p = Legal_efforts3p.value;
+efforts3p = parseInt(efforts3p);
+
+
+factor4 = efforts3p;
+
+if (factor4 >= 75) {
+factor4 = 100;
+}
+
+else if (factor4 <= 25) {
+factor4 = 0;
+}
+
+else {
+factor4 = 50;
+}
+
+
+
+//var Legal_jx = document.getElementById ("Legal_Howey_jx");
+//var jx = Legal_jx.value;
+//jx = parseInt(jx);
+
+
+var legalTotalSum = (finInvest + initInvestment + preMined + preExisting + enterpriseVert + profitUtility + efforts3p);
+
+var legalTotal = (factor1 + factor2 + factor3 + factor4);
+
+
+if (legalTotal <= 50) {
+legalTotal = 0;
+}
+
+else if (legalTotal >= 350) {
+
+legalTotal = 100;
+
+}
+
+else if (factor1 ==0 || factor2 ==0 || factor3 ==0 || factor4 ==0) {
+legalTotal = 0;
+}
+
+else {
+legalTotal = 50;
+}
+
+
+
+
+//Transparency Variables
+
+var Trans_contactInfo = document.getElementById ("Trans_Contact_contactInfo");
+var contactInfo = Trans_contactInfo.value;
+contactInfo = parseInt(contactInfo);
+
+var Trans_commChat = document.getElementById ("Trans_Contact_commChat");
+var commChat = Trans_commChat.value;
+commChat = parseInt(commChat);
+
+var Trans_stateGoal = document.getElementById ("Trans_Access_stateGoal");
+var stateGoal = Trans_stateGoal.value;
+stateGoal = parseInt(stateGoal);
+
+var Trans_openSource = document.getElementById ("Trans_Access_openSource");
+var openSource = Trans_openSource.value;
+openSource = parseInt(openSource);
+
+var Trans_transInfo = document.getElementById ("Trans_Access_transInfo");
+var transInfo = Trans_transInfo.value;
+transInfo = parseInt(transInfo);
+
+var Trans_teamInfo = document.getElementById ("Trans_Access_teamInfo");
+var teamInfo = Trans_teamInfo.value;
+teamInfo = parseInt(teamInfo);
+
+var Trans_coreExp = document.getElementById ("Trans_Access_coreExp");
+var coreExp = Trans_coreExp.value;
+coreExp = parseInt(coreExp);
+
+var Trans_coreTeams = document.getElementById ("Trans_Access_coreTeams");
+var coreTeams = Trans_coreTeams.value;
+coreTeams = parseInt(coreTeams);
+
+var Trans_statUpdates = document.getElementById ("Trans_Timeline_statUpdates");
+var statUpdates = Trans_statUpdates.value;
+statUpdates = parseInt(statUpdates);
+
+var Trans_benchmarks = document.getElementById ("Trans_Timeline_benchmarks");
+var benchmarks = Trans_benchmarks.value;
+benchmarks = parseInt(benchmarks);
+
+
+var transTotalSum = (contactInfo + commChat + stateGoal + openSource + transInfo + teamInfo + coreExp + coreTeams + statUpdates + benchmarks);
+
+var transTotal = (contactInfo + commChat + stateGoal + openSource + transInfo + teamInfo + coreExp + coreTeams + statUpdates + benchmarks);
+
+if (transTotal >= 225) {
+transTotal = 100;
+}
+
+else if (transTotal <= 120) {
+
+transTotal = 0;
+
+}
+
+else {
+transTotal = 50;
+}
+
+
+//Governance Variables
+
+var Gov_release = document.getElementById ("Gov_Issuance_release");
+var release = Gov_release.value;
+release = parseInt(release);
+
+var Gov_teamStruct = document.getElementById ("Gov_Issuance_teamStruct");
+var teamStruct = Gov_teamStruct.value;
+teamStruct = parseInt(teamStruct);
+
+var Gov_decentralized = document.getElementById ("Gov_Issuance_decentralized");
+var decentralized = Gov_decentralized.value;
+decentralized = parseInt(decentralized);
+
+var Gov_icoFin = document.getElementById ("Gov_Issuance_icoFin");
+var icoFin = Gov_icoFin.value;
+icoFin = parseInt(icoFin);
+
+var Gov_founderLiq = document.getElementById ("Gov_Issuance_founderLiq");
+var founderLiq = Gov_founderLiq.value;
+founderLiq = parseInt(founderLiq);
+
+var Gov_tokensIssued = document.getElementById ("Gov_Issuance_tokensIssued");
+var tokensIssued = Gov_tokensIssued.value;
+tokensIssued = parseInt(tokensIssued);
+
+var Gov_fundGoal = document.getElementById ("Gov_Issuance_fundGoal");
+var fundGoal = Gov_fundGoal.value;
+fundGoal = parseInt(fundGoal);
+
+var Gov_tokenCap = document.getElementById ("Gov_Issuance_tokenCap");
+var tokenCap = Gov_tokenCap.value;
+tokenCap = parseInt(tokenCap);
+
+
+var govTotalSum = (release + teamStruct + decentralized + icoFin + founderLiq + tokensIssued + fundGoal + tokenCap);
+
+var govTotal = (release + teamStruct + decentralized + icoFin + founderLiq + tokensIssued + fundGoal + tokenCap);
+
+if (govTotal >= 225) {
+govTotal = 100;
+}
+
+else if (govTotal <= 120) {
+
+govTotal = 0;
+
+}
+
+else {
+govTotal = 50;
+}
+
+
+
+
+//Functionality Variables
+
+var Func_whitepaper = document.getElementById ("Func_TechSpec_whitepaper");
+var whitepaper = Func_whitepaper.value;
+whitepaper = parseInt(whitepaper);
+
+var Func_live = document.getElementById ("Func_TechSpec_live");
+var live = Func_live.value;
+live = parseInt(live);
+
+var Func_decentralPlatform = document.getElementById ("Func_TechSpec_decentralPlatform");
+var decentralPlatform = Func_decentralPlatform.value;
+decentralPlatform = parseInt(decentralPlatform);
+
+var Func_utility = document.getElementById ("Func_TechSpec_utility");
+var utility = Func_utility.value;
+utility = parseInt(utility);
+
+var Func_necessary = document.getElementById ("Func_TechSpec_necessary");
+var necessary = Func_necessary.value;
+necessary = parseInt(necessary);
+
+//functionality total
+
+var funcTotalSum = (whitepaper + live + decentralPlatform + utility + necessary);
+
+var funcTotal = (whitepaper + live + decentralPlatform + utility + necessary);
+
+if (funcTotal >= 225) {
+funcTotal = 100;
+}
+
+else if (funcTotal <= 120) {
+
+funcTotal = 0;
+
+}
+
+else {
+funcTotal = 50;
+}
+
+
+
+
+console.log ("Legal Total: " + legalTotal);
+console.log ("Transparency Total: " + transTotal);
+console.log ("Governance Total: " + govTotal);
+console.log ("Function Total: " + funcTotal);
+
+riskTotal = (funcTotal + govTotal + transTotal + legalTotal);
+
+//To Be Deleted:
+riskTotal = riskTotal/4;
+
+riskTotalSum = (funcTotal + govTotal + transTotal + legalTotal);
+
+var riskString;
+
+if (riskTotalSum >=250)
+
+{
+
+riskString = "Your risk level is: High";
+
+}
+
+else if (riskTotalSum <=100)
+
+{
+riskString = "Your risk level is: Moderate";
+}
+
+else
+{
+riskString = "Your risk level is: Low";
+}
+
+
+
+var legalTotalOut = document.createTextNode ("Legal Total (average): "+ (legalTotalSum/7));
+var transTotalOut = document.createTextNode ("Transparency Total (average): " + (transTotalSum/10));
+var govTotalOut = document.createTextNode ("Governance Total (average): " + (govTotalSum/8));
+var funcTotalOut = document.createTextNode ("Functionality Total (average): " + (funcTotalSum/5));
+
+var brL = document.createElement("br");
+var brT = document.createElement("br");
+var brG = document.createElement("br");
+var brF = document.createElement("br");
+
+var scoresOut = document.getElementById ("scores");
+
+scoresOut.appendChild (legalTotalOut);
+scoresOut.appendChild (brL);
+scoresOut.appendChild (transTotalOut);
+scoresOut.appendChild (brT);
+scoresOut.appendChild (govTotalOut);
+scoresOut.appendChild (brG);
+scoresOut.appendChild (funcTotalOut);
+scoresOut.appendChild (brF);
+
+
+
+
+
+var totalOutput = document.createTextNode(riskTotal);
+
+var totalApp = document.getElementById ("finalTotal");
+totalApp.appendChild (totalOutput);
+
+
+var stringOutput = document.createTextNode (riskString);
+
+var stringApp = document.getElementById ("stringTotal");
+stringApp.appendChild (stringOutput);
+
+
+
+
+
+}
+
+
+
+riskButton.addEventListener ("click", calcRisk);
+
+
+
+</script>
